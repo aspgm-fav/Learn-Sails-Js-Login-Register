@@ -34,5 +34,10 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-
+  'POST   /products': 'ProductController.create',
+  'GET    /products': 'ProductController.find',
+  'GET    /products/:id': 'ProductController.findOne',
+  'PUT    /products/:id': 'ProductController.update',
+  'PATCH  /products/:id': 'ProductController.update',
+  'DELETE /products/:id': 'ProductController.destroy'
 };
